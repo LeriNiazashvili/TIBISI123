@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>პორტფოლიო & თანამშრომლები</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ნავიგაცია -->
+  <header class="navbar">
+    <div class="logo">My<span>Portfolio</span></div>
+    
+    <button class="burger-menu" id="burgerBtn" aria-label="Toggle Navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-item">მთავარი</a>
+      <a href="#employees" class="nav-item">თანამშრომლები</a>
+      <a href="#posts" class="nav-item">სიახლეები</a>
+    </nav>
+  </header>
+
+  <!-- ჰერო სექცია -->
+  <section id="home" class="hero">
+    <h1>მოგესალმებით ჩემს პორტფოლიოზე</h1>
+    <p>ვებ-დეველოპმენტი, API ინტეგრაცია და თანამედროვე ინტერფეისი.</p>
+  </section>
+
+  <!-- თანამშრომლების სექცია -->
+  <section id="employees" class="section">
+    <h2>თანამშრომლების სია</h2>
+    <div class="grid-container" id="employeesContainer">
+      <p class="loading">მონაცემები იტვირთება...</p>
+    </div>
+  </section>
+
+  <!-- დამატებითი ფუნქციონალი: პოსტები/სიახლეები (GET /posts) -->
+  <section id="posts" class="section alt-bg">
+    <h2>ბოლო სიახლეები (API Posts)</h2>
+    <div class="grid-container" id="postsContainer">
+      <p class="loading">პოსტები იტვირთება...</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
